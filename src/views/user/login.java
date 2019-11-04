@@ -81,6 +81,11 @@ public class login extends javax.swing.JFrame {
                 txUserMailFocusGained(evt);
             }
         });
+        txUserMail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txUserMailActionPerformed(evt);
+            }
+        });
         PainelRoot.add(txUserMail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, 220, 40));
 
         lbLinkCriarConta.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
@@ -105,7 +110,7 @@ public class login extends javax.swing.JFrame {
 
         lbTituloLogin.setFont(new java.awt.Font("Leelawadee UI", 1, 48)); // NOI18N
         lbTituloLogin.setForeground(new java.awt.Color(255, 255, 255));
-        lbTituloLogin.setText("<html>\nMyWorld<br>\n<font size=\"5\">Entre. Sinta-se em casa.</font>\n</html>");
+        lbTituloLogin.setText("<html> MyWorld<br> <font size=\"5\">Entre. Sinta-se em casa.</font> </html>");
         PainelRoot.add(lbTituloLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, -1, -1));
 
         BtnFazerLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/images/btn_login.png"))); // NOI18N
@@ -153,6 +158,10 @@ public class login extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.txUserMail.setText("");
     }//GEN-LAST:event_txUserMailFocusGained
+
+    private void txUserMailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txUserMailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txUserMailActionPerformed
 
     /**
      * @param args the command line arguments
